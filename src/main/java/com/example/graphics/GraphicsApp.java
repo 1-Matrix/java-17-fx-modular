@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 
 public class GraphicsApp extends Application {
 
-    Calculator calc = new Calculator();
+    Rectangular rect = new Rectangular();
 
     @Override
     public void start(Stage primaryStage) {
