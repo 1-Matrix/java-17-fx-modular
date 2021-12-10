@@ -8,24 +8,24 @@ public class CircleTest {
 
     public class CircleTest {
 
-        private Rectangular c = null;
+        private Circle rad = null;
 
         public CircleTest() {
         }
 
         @BeforeEach
         public void before() {
-            this.c = new Rectangular();
+            this.rad = new Circle(3.0 , 3.0 , 3.0);
         }
 
         @Test
         public void computeAreaTest() {
-            Assertions.assertEquals(this.c.Area(3.0), 28.27, 0.01);
+            Assertions.assertEquals(this.rad.computeArea(), 28.27, 0.01);
         }
 
         @Test
         public void ComputeCircumfurenceTest() {
-            Assertions.assertEquals(this.c.Circumference(3.0), 18.84, 0.01);
+            Assertions.assertEquals(this.rad.comupteCircumference(), 18.84, 0.01);
         }
     }
 }
